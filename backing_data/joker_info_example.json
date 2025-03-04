@@ -1,3 +1,6 @@
 {
-    "joker_name": "[NAME]"
+    "joker_name": "[NAME]",
+    "joker_img_src": "[SOURCE].png",
+    "joker_effect_description": "",
+    "joker_additional_effect": "[0: NONE, 1: FOIL, 2: HOLOGRAPHIC, 3: POLYCHROME]"
 }

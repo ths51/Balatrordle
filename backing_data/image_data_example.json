@@ -1,4 +1,7 @@
 {
     "src_image": "[SRC].jpg",
-    "jokers": ["[JOKER_OBJ]", "[JOKER_OBJ]", "[JOKER_OBJ]"]
+    "jokers": ["[JOKER_OBJ]", "[JOKER_OBJ]", "[JOKER_OBJ]"],
+    "cards_in_hand": ["CARD_OBJ", "CARD_OBJ", "CARD_OBJ"],
+    "cards_scored": ["CARD_OBJ", "CARD_OBJ", "CARD_OBJ"],
+    "score": 0
 }
