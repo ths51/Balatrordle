@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function submitImage() {
-    const element = document.getElementById("joker_submission");
+    const element = document.getElementById("image_submission");
     console.log("Jee");
 }
 
@@ -13,7 +13,7 @@ function AddImage() {
 
   return (
     <>
-      <form id="joker_submission" onSubmit={() => submitJoker()}>
+      <form id="image_submission" onSubmit={() => submitJoker()}>
         <p>Hello</p>
         <button type="submit">H</button>
       </form>
