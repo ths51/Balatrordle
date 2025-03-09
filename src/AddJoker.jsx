@@ -5,7 +5,6 @@ import './App.css'
 
 function submitJoker() {
     const element = document.getElementById("joker_submission");
-    var fs = require('fs');
     const file = document.getElementById('joker_img').value;
     console.log(file);
     
@@ -19,8 +18,8 @@ function AddJoker() {
       <form id="joker_submission" onSubmit={() => submitJoker()}>
         <p>Hello</p>
         <input type="file" id="joker_img" name="joker_img" accept="image/png" />
-        <button type="submit">H</button>
       </form>
+      <button onClick={() => submitJoker()}>H</button>
     </>
   )
 }
