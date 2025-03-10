@@ -1,6 +1,907 @@
-{
-    "Joker": {
-        "description": "",
-        "src": "Joker.png"
-    }
+{ 
+    "jokers": [
+        {
+            "name": "Joker",
+            "effect": "+4 Mult",
+            "src": "Joker.png",
+            "id": 0
+        },
+
+        {
+            "name": "Greedy Joker",
+            "effect": "Played cards with  Diamond suit give +3 Mult when scored",
+            "src": "Greedy_Joker.png",
+            "id": 1
+        },
+
+        {
+            "name": "Lusty Joker",
+            "effect": "Played cards with  Heart suit give +3 Mult when scored",
+            "src": "Lusty_Joker.png",
+            "id": 2
+        },
+
+        {
+            "name": "Wrathful Joker",
+            "effect": "Played cards with  Spade suit give +3 Mult when scored",
+            "src": "Wrathful_Joker.png",
+            "id": 3
+        },
+
+        {
+            "name": "Gluttonous Joker",
+            "effect": "Played cards with  Club suit give +3 Mult when scored",
+            "src": "Gluttonous_Joker.png",
+            "id": 4
+        },
+
+        {
+            "name": "Jolly Joker",
+            "effect": "+8 Mult if played hand contains a Pair",
+            "src": "Jolly_Joker.png",
+            "id": 5
+        },
+
+        {
+            "name": "Zany Joker",
+            "effect": "+12 Mult if played hand contains a Three of a Kind",
+            "src": "Zany_Joker.png",
+            "id": 6
+        },
+
+        {
+            "name": "Mad Joker",
+            "effect": "+10 Mult if played hand contains a Two Pair",
+            "src": "Mad_Joker.png",
+            "id": 7
+        },
+
+        {
+            "name": "Crazy Joker",
+            "effect": "+12 Mult if played hand contains a Straight",
+            "src": "Crazy_Joker.png",
+            "id": 8
+        },
+
+        {
+            "name": "Droll Joker",
+            "effect": "+10 Mult if played hand contains a Flush",
+            "src": "Droll_Joker.png",
+            "id": 9
+        },
+
+        {
+            "name": "Sly Joker",
+            "effect": "+50 Chips if played hand contains a Pair",
+            "src": "Sly_Joker.png",
+            "id": 10
+        },
+
+        {
+            "name": "Wily Joker",
+            "effect": "+100 Chips is played hand contains a Three of a Kind",
+            "src": "Wily_Joker.png",
+            "id": 11
+        },
+
+        {
+            "name": "Clever Joker",
+            "effect": "+80 Chips if played hand contains a Two Pair",
+            "src": "Clever_Joker.png",
+            "id": 12
+        },
+
+        {
+            "name": "Devious Joker",
+            "effect": "+100 Chips if played hand contains a Straight",
+            "src": "Devious_Joker.png",
+            "id": 13
+        },
+
+        {
+            "name": "Crafty Joker",
+            "effect": "+80 Chips if played hand contains a Flush",
+            "src": "Crafty_Joker.png",
+            "id": 14
+        },
+
+        {
+            "name": "Half Joker",
+            "effect": "+20 Mult if played hand contains 3 or fewer cards",
+            "src": "Half_Joker.png",
+            "id": 15
+        },
+
+        {
+            "name": "Joker Stencil",
+            "effect": "X1 Mult for each empty Joker slot. Joker Stencil included (Currently X1)",
+            "src": "Joker_Stencil.png",
+            "id": 16
+        },
+
+        {
+            "name": "Four Fingers",
+            "effect": "All Flushes and Straights can be made with 4 cards",
+            "src": "Four_Fingers.png",
+            "id": 17
+        },
+
+        {
+            "name": "Mime",
+            "effect": "Retrigger all card held in hand abilities",
+            "src": "Mime.png",
+            "id": 18
+        },
+
+        {
+            "name": "Credit Card",
+            "effect": "Go up to -$20 in debt",
+            "src": "Credit_Card.png",
+            "id": 19
+        },
+
+        {
+            "name": "Ceremonial Dagger",
+            "effect": "When Blind is selected, destroy Joker to the right and permanently add double its sell value to this Mult (Currently +0 Mult)",
+            "src": "Ceremonial_Dagger.png",
+            "id": 20
+        },
+
+        {
+            "name": "Banner",
+            "effect": "+30 Chips for each remaining discard",
+            "src": "Banner.png",
+            "id": 21
+        },
+
+        {
+            "name": "Mystic Summit",
+            "effect": "+15 Mult when 0 discards remaining",
+            "src": "Mystic_Summit.png",
+            "id": 22
+        },
+
+        {
+            "name": "Marble Joker",
+            "effect": "Adds one Stone card to the deck when Blind is selected",
+            "src": "Marble_Joker.png",
+            "id": 23
+        },
+
+        {
+            "name": "Loyalty Card",
+            "effect": "X4 Mult every 6 hands played 5 remaining",
+            "src": "Loyalty_Card.png",
+            "id": 24
+        },
+
+        {
+            "name": "8 Ball",
+            "effect": "1 in 4 chance for each played 8 to create a Tarot card when scored (Must have room)",
+            "src": "8_Ball.png",
+            "id": 25
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        },
+
+        {
+            "name": "",
+            "effect": "",
+            "src": ".png",
+            "id": 1
+        }
+
+    ]
 }
