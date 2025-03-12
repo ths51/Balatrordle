@@ -53,11 +53,16 @@
 }
 
 .joker {
-  display: block;
+  display: flex;
   position: relative;
-  width: 100pt;
-  height: 150pt;
+  height: 50pt;
   overflow: hidden;
+  text-align: left;
+  align-items: center;
+}
+
+.joker * {
+  margin: 5pt;
 }
 
 .image {
