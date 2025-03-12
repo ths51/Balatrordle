@@ -39,7 +39,7 @@ function JokerListView() {
                 {/* <img className='effect' src={"src/assets/card_effects/Foil.png"} style={{ maskImage: `url(src/assets/jokers/${item['src']})`, maskSize: "100%" }}/> */}
                 <p>{item.name} {item.cost && ("- $" + item.cost)}</p>
                 {/* <small>{item.effect}</small> */}
-                <p style={{ padding: '8px', borderRadius: '8px', backgroundColor: (item.rarity == "Common" ? "blue" : (item.rarity == "Uncommon" ? "green" : (item.rarity == "Rare" ? "red" : "purple"))) }}>{item.rarity}</p>
+                <small style={{ padding: '8px', borderRadius: '8px', backgroundColor: (item.rarity == "Common" ? "blue" : (item.rarity == "Uncommon" ? "green" : (item.rarity == "Rare" ? "red" : "purple"))) }}>{item.rarity}</small>
               </div>
             </div>
         })
