@@ -32,10 +32,14 @@ function JokerListView() {
       {
         data.map((item, index) => {
             return <div style={{ display: 'flex' }}> 
-              <img src={"src/assets/jokers/" + item['src']} />
+              <div className="joker">
+                <img className='image' src={"src/assets/jokers/" + item['src']} />
+                <img className='effect' src={"src/assets/card_effects/Foil.png"} style={{ maskImage: `url(src/assets/jokers/${item['src']})`, maskSize: "100%" }}/>
+              </div>
               <div className='block'> 
-                <h2>{item['name']}</h2>
-                <p>{item['effect']}</p>
+                <h2>{item.name} {item.cost && ("- $" + item.cost)}</h2>
+                <p>{item.effect}</p>
+                <caption style={{ padding: '8px', borderRadius: '8px', backgroundColor: (item.rarity == "Common" ? "blue" : (item.rarity == "Uncommon" ? "green" : (item.rarity == "Rare" ? "red" : "purple"))) }}>{item.rarity}</caption>
               </div>
             </div>
         })
