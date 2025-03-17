@@ -5,10 +5,11 @@
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
   text-align: center;
   font-family: 'balatro';
+  /* background-color: red; */
 }
 
 .logo {
@@ -52,25 +53,49 @@
   padding: 0 10pt;
 }
 
-.joker {
-  display: flex;
-  position: relative;
-  height: 50pt;
-  overflow: hidden;
-  text-align: left;
-  align-items: center;
+.guess_input {
+  width: 200pt;
 }
 
-.joker * {
+.joker_list {
+  display: block;
+  width: 280pt;
+  height: 250pt;
+  overflow-y: scroll;
+  background-color: #111;
+  padding: 20pt;
+  position: absolute;
+  left: calc(50% - 320pt / 2);
+}
+
+.joker_select {
+  display: inline-block;
+  padding: 10pt;
   margin: 5pt;
+  width: 160px;
+  height: 200px;
+  align-items: center;
+  transition: 0.15s ease-out;
+}
+
+.joker_select:hover {
+  /* border: 2pt solid white; */
+  background-color: #444;
+}
+
+.joker_select * {
+  display: block;
+  margin: 10pt auto;
+  line-height: 125%;
+  /* background-color: red; */
 }
 
 .image {
-  position: relative;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  max-height: 100%;
+  /* position: relative; */
+  /* top: 0; */
+  /* left: 0; */
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .effect {

@@ -5,7 +5,7 @@ import './App.css'
 
 // THANK YOU https://docs.dndkit.com/
 
-function JokerListView() {
+function JokerListView(jokers) {
   const [data, setData] = useState([])
 
   const getData = () => {
@@ -30,18 +30,14 @@ function JokerListView() {
   }, [])
 
   return (
-    <div>
+    <div className="joker_list">
       {
         data.map((item, index) => {
-            return <div> 
-              <div className="joker">
-                <img className='image' src={"src/assets/jokers/" + item['src']} />
-                {/* <img className='effect' src={"src/assets/card_effects/Foil.png"} style={{ maskImage: `url(src/assets/jokers/${item['src']})`, maskSize: "100%" }}/> */}
-                <p>{item.name} {item.cost && ("- $" + item.cost)}</p>
-                {/* <small>{item.effect}</small> */}
-                <small style={{ padding: '8px', borderRadius: '8px', backgroundColor: (item.rarity == "Common" ? "blue" : (item.rarity == "Uncommon" ? "green" : (item.rarity == "Rare" ? "red" : "purple"))) }}>{item.rarity}</small>
-              </div>
-            </div>
+            return <button className="joker_select">
+              <img className='image' src={"src/assets/jokers/" + item['src']} />
+              <p>{item.name}</p>
+              {/* <small style={{ padding: '8px', borderRadius: '8px', backgroundColor: (item.rarity == "Common" ? "blue" : (item.rarity == "Uncommon" ? "green" : (item.rarity == "Rare" ? "red" : "purple"))) }}>{item.rarity}</small> */}
+            </button>
         })
       }
       <button onClick={() => { console.log(data) }}>Print</button>
