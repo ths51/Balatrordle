@@ -56,15 +56,15 @@ function JokerGuessView() {
     setFilteredJokers(items);
   }
 
-  const makeGuess = (event) => {
-    console.log(event);
-  }
-
   return (
     <>
-      <p>{joker['name']}</p>
+      <h1>BALATRLE</h1>
+      {/* <p>{joker['name']}</p> */}
       <form id="guess_form">
-        <input id="guess" className="guess_input" value={guess} onChange={ handleGuessChange } />
+        {
+          (guesses.length < 6) &&
+          <input id="guess" className="guess_input" value={guess} onChange={ handleGuessChange } />
+        }
         {
           (filteredJokers.length > 0) && (guess.length > 0) &&
           (
@@ -90,14 +90,40 @@ function JokerGuessView() {
         }
       </form>
       <div>
+      <table className='guess_list'>
+        <tr>
+          <th><small>Img</small></th>
+          <th><small>Joker Name</small></th>
+          <th><small>Cost</small></th>
+          <th><small>Rarity</small></th>
+        </tr>
       {
         (guesses.length > 0) &&
         (
           guesses.map((item, index) => {
-            return <p>{item.name}</p>
+            return <tr>
+                <td className='guess_item' style={{ backgroundColor: ((item.id == joker.id) ? "#0b2" : "none") }}>
+                  <img className='image' src={"src/assets/jokers/" + item['src']} />
+                </td>
+                <td className='guess_item' style={{ backgroundColor: ((item.name == joker.name) ? "#0b2" : "none") }}>{item.name}</td>
+                <td className='guess_item' style={{ backgroundColor: ((item.cost == joker.cost) ? "#0b2" : ((-1 <= (item.cost - joker.cost) && (item.cost - joker.cost) <= 1) ? "#da0" : "none")) }}>${item.cost}</td>
+                <td className='guess_item' style={{ 
+                  backgroundColor: 
+                    (joker.rarity == "Common" ? 
+                      (item.rarity == "Common" ? "#0b2" : (item.rarity == "Uncommon" ? "#da0" : "none")) :
+                    (joker.rarity == "Uncommon" ? 
+                      (item.rarity == "Common" ? "#0b2" : ((item.rarity == "Common" || item.rarity == "Rare") ? "#da0" : "none")) :
+                    (joker.rarity == "Rare" ? 
+                      (item.rarity == "Common" ? "#0b2" : ((item.rarity == "Uncommon" || item.rarity == "Legendary") ? "#da0" : "none")) :
+                    (joker.rarity == "Legendary" ? 
+                      (item.rarity == "Common" ? "#0b2" : (item.rarity == "Rare" ? "#da0" : "none")) :
+                    "none"))))
+                 }}>{item.rarity}</td>
+              </tr>
           })
         )
       }
+      </table>
       </div>
     </>
   )
